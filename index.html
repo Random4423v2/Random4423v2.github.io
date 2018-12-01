@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Random4423</title>
+    <meta name="author" content="Gerardo Gonzalez">
+
+    <meta name="description" content="Gerardo Gonzalez: Details and Contact information for Web and Mobile App Development.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="loginCSS.css" />
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    
+    
+    <!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-messaging.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+    
+
+    <script>
+        // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+    var config = {
+        apiKey: "<API_KEY>",
+        authDomain: "<PROJECT_ID>.firebaseapp.com",
+        databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+        projectId: "<PROJECT_ID>",
+        storageBucket: "<BUCKET>.appspot.com",
+        messagingSenderId: "<SENDER_ID>",
+    };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+
+
+    <div class="login">
+
+        <h1>Login</h1>
+
+        <form action="results.php">
+            <input type="text" name="u" placeholder="Username" required="required" />
+            <input type="password" name="p" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
